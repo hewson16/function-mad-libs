@@ -13,12 +13,13 @@ const liquid = liquidInput.value;
 const bodyPartInput = document.getElementById('bodyPart');
 const bodyPart = bodyPartInput.value;
 
-
+let madLibsText = "";
 // generateMadLibs function
- const generateMadLibs = (typeOfBird) => {
-    madLibsText = typeOfBird;
-    return madLibsText;
+ function generateMadLibs() {
+    madLibsText =  madLibsText + typeOfBird;
+    return madLibsText
 }
+
 
 // It was a cold October day. I woke to the smell of ____ roasting in the kitchen.
 // My roommate said, "See if ___ needs a fresh ___"
